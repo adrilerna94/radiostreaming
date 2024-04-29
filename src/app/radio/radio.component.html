@@ -1,0 +1,12 @@
+<p>radio works!</p>
+<h1>{{title}}</h1>
+<input type="text" placeholder={{valuePlaceholder}} [(ngModel)]="inputValue">
+<button id="searchButton" (click)="searchRadio()">{{buttonTextValue}}</button>
+<ul>
+    @for(radio of filterArray; track $index) {
+        <li>
+            <a href={{radio.url}}>{{radio.name}}</a>
+        </li>
+
+    }
+</ul>
